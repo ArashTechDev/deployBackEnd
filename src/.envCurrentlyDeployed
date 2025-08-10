@@ -1,0 +1,25 @@
+# Runtime
+NODE_ENV=production
+# Do NOT set PORT on Render
+
+# CORS (match your deployed frontend)
+FRONTEND_URL=https://deploy-front-end-iota.vercel.app
+CLIENT_URL=https://deploy-front-end-iota.vercel.app
+# Optional: allow Vercel preview URLs too
+ALLOWED_ORIGINS=https://deploy-front-end-iota.vercel.app,https://*.vercel.app
+
+# MongoDB (unchanged)
+MONGO_URI=mongodb+srv://techwitharash:byteBasket@cluster0.eabzdc3.mongodb.net/ByteBasket?retryWrites=true&w=majority
+MONGO_DB_NAME=ByteBasket
+
+# JWT (unchanged)
+JWT_SECRET=e3c2b7f0d6a1c9f8b45e7a2d90f14cb82a49f
+JWT_EXPIRES_IN=7d
+JWT_COOKIE_EXPIRES_IN=7
+
+# Email (unchanged; keep the app password with NO spaces)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=techwitharash@gmail.com
+SMTP_PASS=mwuydnhbvdtkecik
+EMAIL_API_KEY=re_2NYTuPb6_K9SNotW6XRUxHr2BHziz145u

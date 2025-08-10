@@ -79,26 +79,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // CORS configuration
 const corsOptions = {
-  origin: function (origin, callback) {
-    const allowedOrigins = [
-      'http://localhost:3000',
-      'http://localhost:3001',
-      'http://localhost:3002',
-      'https://localhost:3000',
-      'https://localhost:3001',
-      'https://localhost:3002',
-      process.env.FRONTEND_URL,
-    ].filter(Boolean);
-
-    // Allow requests with no origin (mobile apps, etc.)
-    if (!origin) return callback(null, true);
-
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: '*',
   credentials: true,
   optionsSuccessStatus: 200, // Some legacy browsers choke on 204
 };
